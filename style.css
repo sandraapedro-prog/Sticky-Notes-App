@@ -126,7 +126,7 @@ span {
   transform: rotate(-4deg) translateY(0px);
   background: #F7FFE6;    
 }
-/*  Chai Lattes in Autumnn */
+/*  Chai Lattes in Autumn */
 .post-it:nth-child(13) {
   transform: rotate(6deg) translateY(0px);
   background: #FFE6EA;
@@ -174,7 +174,6 @@ span {
   flex-direction: column;
   font-family: "Source Code Pro";
   font-size: 16px;
-  field-sizing: content;
   gap: 15px;
 }
 
@@ -188,8 +187,8 @@ span {
 /*  Textbox for message and name */
 input[type="text"] {
   
-  width: 50%;
-  max-width: 100px;
+  width: 200px;
+  max-width: 80%;
   padding:10px;
   font-family: "Source Code Pro";
   background: white;
@@ -202,8 +201,8 @@ input[type="text"] {
 }
 
 textarea {
-  width: 20%;
-  height: 60%;
+  width: 300px;
+  max-width: 80%;
   padding:10px;
   font-family: "Source Code Pro";
   background: white;
@@ -228,7 +227,6 @@ input[type="submit"] {
   border: none;
   border-radius: 0;
   background: #B3CCFF;
-  border: 0px solid #e6e06b;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   transform: rotate(-3deg);
 }
@@ -241,7 +239,6 @@ input[type="submit"]:hover {
 /*  Footer style */
 .footer {
   background: #ececec;
-  color: white;
   padding: 20px 0;
   margin-top: 50px;
   display: flex;
@@ -277,7 +274,7 @@ input[type="submit"]:hover {
 .footer-links a:hover {
   text-decoration: underline;
 }
-/*  Detele button for new post it */
+/*  Delete button for new post it */
 .delete-btn {
   position: absolute;
   top: 5px;
@@ -290,7 +287,7 @@ input[type="submit"]:hover {
   color: #333;
   opacity: 0.6;
 }
-/*  Detele button style */
+/*  Delete button style */
 .delete-btn:hover {
   opacity: 1;
   transform: scale(1.2);

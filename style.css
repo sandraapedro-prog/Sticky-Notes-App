@@ -1,0 +1,297 @@
+.title {
+  font-family: "Source Code Pro";
+  font-size: 36px;
+  justify-content: center;
+  text-align: center;
+ 
+}
+/*  Small paragraph under the title */  
+p {
+  font-family: "Source Code Pro";
+  text-align: center;
+  font-size: 16px;
+  
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #222;
+  background-color: #ececec;
+}
+/*  "For you" */  
+span {
+  position: relative;
+  font-family: "Liu Jian Mao Cao";
+  font-size: 44px;
+  
+}
+.marker {
+  position: relative;
+  display: inline;
+  z-index: 1;
+}
+
+.marker::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: 60%;
+  height: 0.8em;
+  transform: translateY(-50%) rotate(-1deg);
+  background: #B3CCFF;
+  z-index: -1;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex: 1;
+}
+
+.post-it {
+  width: 200px;
+  padding: 20px;
+  background: #fffa75;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+  font-family: "Source Code Pro";
+  text-align: center;
+  position: relative;
+}
+/*  Randoms acts of kindness */  
+.post-it:nth-child(1) {
+  transform: rotate(-3deg) translateY(6px);
+  background: #FFF7E6;
+}
+/*  Long wallks and hikes in nature */
+.post-it:nth-child(2) {
+  transform: rotate(3deg) translateY(10px);
+  background: #E6EAFF;
+}
+/*  Picnics at Hampstead... */
+.post-it:nth-child(3) {
+  transform: rotate(-2deg) translateY(-5px);
+  background: #F7E6FF;
+}
+/*  The sun setting at 9pm */
+.post-it:nth-child(4) {
+  transform: rotate(6deg) translateY(7px);
+  background: #F7FFE6;
+}
+/*  Time spent with friends... */
+.post-it:nth-child(5) {
+  transform: rotate(-4deg) translateY(0px);
+  background: #FFE6EA;
+}
+/*  The people you haven't met */
+.post-it:nth-child(6) {
+  transform: rotate(4deg) translateY(0px);
+  background: #72A0C1;
+}
+/*  Summer sunsets with an ocean view */
+  .post-it:nth-child(7) {
+  transform: rotate(-4deg) translateY(0px);
+  background: #F7FFCC;
+}
+/*  The places you haven't visited yet */
+.post-it:nth-child(8) {
+  transform: rotate(-4deg) translateY(0px);
+  background: #FFE6CC;
+}
+/*  Live concerts and festivals */
+.post-it:nth-child(9) {
+  transform: rotate(-4deg) translateY(0px);
+  background: #72A0C1;
+}
+/*  Cold ice tea in the summer shade */
+.post-it:nth-child(10) {
+  transform: rotate(-3deg) translateY(0px);
+  background: #E6E6FF;
+}
+/*  New songs from your favourite artist */
+.post-it:nth-child(11) {
+  transform: rotate(-4deg) translateY(0px);
+  background: #FFBFB3;
+}
+/*  Centre Court tennis at Wimbledon */
+  .post-it:nth-child(12) {
+  transform: rotate(-4deg) translateY(0px);
+  background: #F7FFE6;    
+}
+/*  Chai Lattes in Autumnn */
+.post-it:nth-child(13) {
+  transform: rotate(6deg) translateY(0px);
+  background: #FFE6EA;
+}
+/*  Books that will change your  life */
+.post-it:nth-child(14) {
+  transform: rotate(-4deg) translateY(0px);
+  background: #F7FFCC;
+}
+/*  Oat pumpkin spice... */
+.post-it:nth-child(15) {
+  transform: rotate(7deg) translateY(4px);
+  background: #FFE6CC;
+}
+
+/*  tape effect */
+.post-it::before {
+  content: "";
+  width: 60px;
+  height: 20px;
+  background-color: rgba(255,255,255,0.6);
+  color: #222;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(3deg);
+}
+
+.post-it:hover {
+  transform: rotate(0deg) scale(1.1);
+  z-index: 10;
+}
+/*  Write your message: */
+.message {
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  text-align: center;
+}
+/*  "Message text box" */
+.textbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  field-sizing: content;
+  gap: 15px;
+}
+
+/*  "Your name:" */
+.name {
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  text-align: center;
+}
+
+/*  Textbox for message and name */
+input[type="text"] {
+  
+  width: 50%;
+  max-width: 100px;
+  padding:10px;
+  font-family: "Source Code Pro";
+  background: white;
+  font-size: 16px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border: 1px solid #B3CCFF;
+  resize: none;
+}
+
+textarea {
+  width: 20%;
+  height: 60%;
+  padding:10px;
+  font-family: "Source Code Pro";
+  background: white;
+  font-size: 16px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border: 1px solid #B3CCFF;
+  resize: none;
+}
+
+/*  Submit button */
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  flex-direction: column;
+  font-family: "Source Code Pro";
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background: #B3CCFF;
+  border: 0px solid #e6e06b;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transform: rotate(-3deg);
+}
+/*  Submit button style */
+input[type="submit"]:hover {
+  background-color: #F7FFE6;
+  transition: all 0.2s ease;
+
+}
+/*  Footer style */
+.footer {
+  background: #ececec;
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+/*  Footer content*/
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-direction: column;
+  gap: 10px;
+  color: #222;
+  font-family: "Source Code Pro";
+}
+/*  Footer links */
+.footer-links a {
+  color: #222;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+  font-weight: bold;
+  font-family: "Source Code Pro";
+  flex-direction: column;
+  
+}
+/*  Footer links style */
+.footer-links a:hover {
+  text-decoration: underline;
+}
+/*  Detele button for new post it */
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+  opacity: 0.6;
+}
+/*  Detele button style */
+.delete-btn:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
